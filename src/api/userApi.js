@@ -28,5 +28,5 @@ function onSuccess(res) {
 }
 
 function onError(err) {
-  console.log(error); // eslint-disable-line no-console
+  console.log(err); // eslint-disable-line no-console
 }
