@@ -1,18 +1,18 @@
 # Test against this version of Node.js
 environment:
-matrix:
-- nodejs_version: "6"
+  matrix:
+    - nodejs_version: "6"
 
 # Install scripts
 install:
-- ps: Install-Product node $env:nodejs_version
-- npm install
+  - ps: Install-Product node $env:nodejs_version
+  - npm install
 
 # Post install test scripts
 test_script:
-- node --version
-- npm --version
-- npm test
+  - node --version
+  - npm --version
+  - npm test
 
 # Don't actually build
 build: off
